@@ -1,71 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+<section class="section-contact-us container">
+  <div class="div-form">
+    <h2 class="title-contact-us">Contact Us</h2>
+    <div class="container-form">
+      <form class="form-contact-us">
+        <p class="p-contact-us">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <div class="div-input">
+          <input
+            class="input-name"
+            type="text"
+            name="username"
+            placeholder="Name"
+          />
+        </div>
+        <div class="div-input">
+          <input
+            class="input-email"
+            type="email"
+            name="email_address"
+            placeholder="Email"
+          />
+        </div>
+        <div class="div-input">
+          <input class="input-tel" type="tel" name="phone" placeholder="+380" />
+        </div>
+        <textarea
+          class="textarea-comment"
+          name="text"
+          rows="5"
+          placeholder="Comment"
+        ></textarea>
+        <button class="button-send" type="button">Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="div-img">
+    <img
+      srcset="
+        /img/beforefooter-img-mob-1x.jpg 1x,
+        /img/beforefooter-img-mob-2x.jpg 2x
+      "
+      src="/img/beforefooter-img-mob-1x.jpg"
+      class="beforefooter-img"
+      alt="clock"
+      width="335"
+      height="512"
     />
-  </head>
-  <body>
-    <section class="section-contact-us container">
-      <h2 class="title-contact-us">Contact Us</h2>
-      <div class="container-form">
-        <form class="form-contact-us">
-          <p class="p-contact-us">
-            Please use the form below to contact us. Enter your name, email,
-            phone, and message and we'll get back to you shortly.
-          </p>
-          <div class="div-input">
-            <input
-              class="input-name"
-              type="text"
-              name="username"
-              placeholder="Name"
-            />
-          </div>
-          <div class="div-input">
-            <input
-              class="input-email"
-              type="email"
-              name="email_address"
-              placeholder="Email"
-            />
-          </div>
-          <div class="div-input">
-            <input
-              class="input-tel"
-              type="tel"
-              name="phone"
-              placeholder="+380"
-            />
-          </div>
-          <textarea
-            class="textarea-comment"
-            name="text"
-            rows="5"
-            placeholder="Comment"
-          ></textarea>
-          <button class="button-send" type="button">Send</button>
-        </form>
-      </div>
-      <img
-        srcset="
-          ./img/beforefooter-img-mob-1x.jpg 1x,
-          ./img/beforefooter-img-mob-2x.jpg 2x
-        "
-        src="./img/beforefooter-img-mob-1x.jpg"
-        class="beforefooter-img"
-        alt="clock"
-        width="335"
-        height="512"
-      />
-    </section>
-  </body>
-</html>
+  </div>
+</section>
